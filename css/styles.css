@@ -1,0 +1,187 @@
+@font-face {
+	font-family: 'ProvimaNovaLight';
+	src: url('/fonts/proximanova-light.eot');
+	src: url('/fonts/proximanova-light.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-light.woff') format('woff'),
+		 url('/fonts/proximanova-light.ttf') format('truetype'),
+		 url('/fonts/proximanova-light.svg#proxima_novalight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaLightItalic';
+	src: url('/fonts/proximanova-lightitalic.eot');
+	src: url('/fonts/proximanova-lightitalic.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-lightitalic.woff') format('woff'),
+		 url('/fonts/proximanova-lightitalic.ttf') format('truetype'),
+		 url('/fonts/proximanova-lightitalic.svg#proxima_novalight_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('/fonts/proximanova-regular.eot');
+	src: url('/fonts/proximanova-regular.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-regular.woff') format('woff'),
+		 url('/fonts/proximanova-regular.ttf') format('truetype'),
+		 url('/fonts/proximanova-regular.svg#proxima_novaregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaItalic';
+	src: url('/fonts/proximanova-regularitalic.eot');
+	src: url('/fonts/proximanova-regularitalic.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-regularitalic.woff') format('woff'),
+		 url('/fonts/proximanova-regularitalic.ttf') format('truetype'),
+		 url('/fonts/proximanova-regularitalic.svg#proxima_novaregular_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSemibold';
+	src: url('/fonts/proximanova-semibold.eot');
+	src: url('/fonts/proximanova-semibold.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-semibold.woff') format('woff'),
+		 url('/fonts/proximanova-semibold.ttf') format('truetype'),
+		 url('/fonts/proximanova-semibold.svg#proxima_novasemibold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaSemiboldItalic';
+	src: url('/fonts/proximanova-semibolditalic.eot');
+	src: url('/fonts/proximanova-semibolditalic.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-semibolditalic.woff') format('woff'),
+		 url('/fonts/proximanova-semibolditalic.ttf') format('truetype'),
+		 url('/fonts/proximanova-semibolditalic.svg#proxima_novasemibold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBold';
+	src: url('/fonts/proximanova-bold.eot');
+	src: url('/fonts/proximanova-bold.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-bold.woff') format('woff'),
+		 url('/fonts/proximanova-bold.ttf') format('truetype'),
+		 url('/fonts/proximanova-bold.svg#proxima_novabold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ProximaNovaBoldItalic';
+	src: url('/fonts/proximanova-bolditalic.eot');
+	src: url('/fonts/proximanova-bolditalic.eot?#iefix') format('embedded-opentype'),
+		 url('/fonts/proximanova-bolditalic.woff') format('woff'),
+		 url('/fonts/proximanova-bolditalic.ttf') format('truetype'),
+		 url('/fonts/proximanova-bolditalic.svg#proxima_novabold_italic') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: url('/img/bg.jpg') repeat-x top #010103;
+	color: #fff;
+}
+
+.container {
+	text-align: center;
+	width: 850px;
+}
+
+.info {
+	margin: 90px 0;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'ProvimaNovaSemibold','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 36px;
+	font-weight: normal;
+	line-height: 44px;
+	margin: 25px 0 0;
+}
+
+h2 {
+	color: #fff;
+	font-family: 'ProximaNovaSemibold','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 32px;
+	margin: 25px 0;
+}
+
+h3 {
+	color: #fff;
+	font-family: 'ProximaNova','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 30px;
+	margin: 0 0 10px;
+}
+
+p {
+	color: #cac2e1;
+	font-family: 'ProvimaNovaLight','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 22px;
+	font-weight: normal;
+	line-height: 30px;
+}
+
+.sign-up {
+	margin: 0 auto 40px;
+	width: 550px;
+}
+
+.sign-up .form-control {
+	background: rgba(6,6,6,0.75);
+	border: 3px solid #9380ca;
+	border-right: none;
+	color: #cac2e1;
+	font-family: 'ProximaNova','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 16px;
+	font-weight: normal;
+	height: auto;
+	line-height: 24px;
+	padding: 12px;
+}
+	::-webkit-input-placeholder,
+	::-moz-placeholder,
+	:-ms-input-placeholder,
+	input:-moz-placeholder {
+		color: #cac2e1;
+	}
+
+.sign-up .btn-default {
+	border: 3px solid #9380ca;
+	border-left: none;
+	color: #fff;
+	font-family: 'ProximaNovaSemibold','Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 24px;
+	padding: 12px 22px;
+	text-transform: uppercase;
+	background: #4fa807; /* Old browsers */
+	background: -moz-linear-gradient(top, #86cb13 0%, #47a305 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#86cb13), color-stop(100%,#47a305)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #86cb13 0%,#47a305 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #86cb13 0%,#47a305 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #86cb13 0%,#47a305 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #86cb13 0%,#47a305 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86cb13', endColorstr='#47a305',GradientType=0 ); /* IE6-9 */
+}
+	.sign-up .btn-default:hover {
+		background: #fc7e0d;
+	}
+	.sign-up .input-group-btn:last-child > .btn,
+	.sign-up .input-group-btn:last-child > .btn-group {
+		margin-left: 0;
+	}
