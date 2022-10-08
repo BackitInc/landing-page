@@ -23,16 +23,21 @@
 		<div class="container">
 			<div class="info">
 				<img src="/img/logo.png" alt="BackIt">
-				<h1>All your projects in one place.</h1>
-				<p>BackIt is a free crowd-funding management service designed to let you manage projects you fund and discover projects you'll love &mdash; and we're launching soon!</p>
-				<h2>Track any project, any time, anywhere. And it's free!</h2>
+				<h1>Before buying on Amazon, use Backit</h1>
+				<p>BackIt is the TikTok of product reviews. We are private, community driven, product review site. No more bots, no more influencers. Just authentic reviews</p>
+				<h2>Dont be tricked by fake reviews on Amazon anymore. Join us today and it's free!</h2>
 			</div>
 			<div class="sign-up">
 				<h3>Sign up for an invite. Be one of the first to BackIt.</h3>
-				<form>
+				<form  name="invite" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
 					<div class="form-group">
 						<div class="input-group">
-							<input class="form-control" type="text" placeholder="Enter your e-mail address">
+							<input class="form-control" type="email" placeholder="Enter your e-mail address">
+							<p class="hidden">
+								<label>
+									Don’t fill this out if you’re human: <input name="bot-field" />
+								</label>
+							</p>
 							<div class="input-group-btn">
 								<button class="btn btn-default" type="button">Request an invite</button>
 							</div>

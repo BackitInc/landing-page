@@ -135,6 +135,10 @@ p {
 	line-height: 30px;
 }
 
+.hidden {
+	visibility: hidden;
+}
+
 .sign-up {
 	margin: 0 auto 40px;
 	width: 550px;
