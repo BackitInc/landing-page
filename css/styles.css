@@ -87,13 +87,13 @@
 }
 
 body {
-	background: url('/img/bg.jpg') repeat-x top #010103;
+	background: url('https://backit.com/img/bg.jpg') repeat-x top #010103;
 	color: #fff;
+	margin-top: 30px;
 }
 
 .container {
-	text-align: center;
-	width: 850px;
+	margin-top: 30px;
 }
 
 .info {
@@ -141,7 +141,10 @@ p {
 
 .sign-up {
 	margin: 0 auto 40px;
-	width: 550px;
+}
+
+.moo {
+	padding: 20px;
 }
 
 .sign-up .form-control {

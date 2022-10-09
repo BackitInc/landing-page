@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="Community-driven, Product review site using video. Don't get tricked by fake reviews again.">
@@ -32,8 +33,8 @@
 		<title>BackIt | Before buying on amazon, check Backit</title>
 
 		<!-- Bootstrap core CSS -->
-		<link href="/css/bootstrap.min.css" rel="stylesheet">
-		<link href="/css/styles.css" rel="stylesheet">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/styles.css" rel="stylesheet">
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
@@ -41,30 +42,36 @@
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-		<div class="container">
-			<div class="info">
-				<img src="/img/logo.png" alt="BackIt">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<img src="img/logo.png" alt="BackIt">
+				<div class="moo">
 				<h1>Before buying on Amazon, check Backit</h1>
 				<p>Backit is the TikTok of product reviews. We are private, community driven, product review site. No more bots, no more influencers. Just authentic reviews.</p>
 				<h2>Join us today and it's free!</h2>
+				</div>
 			</div>
-			<div class="sign-up">
-				<h3>Sign up for an invite. Be one of the first to BackIt.</h3>
-				<form  name="invite" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
-					<div class="form-group">
-						<div class="input-group">
-							<input class="form-control" type="email" name="email" placeholder="Enter your e-mail address">
-							<p class="hidden">
-								<label>
-									Don’t fill this out if you’re human: <input name="bot-field" />
-								</label>
-							</p>
-							<div class="input-group-btn">
-								<button class="btn btn-default" type="submit">Request an invite</button>
+		</div>
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4 text-center">
+				<div class="sign-up">
+					<h3>Sign up for an invite. Be one of the first to BackIt.</h3>
+					<form  name="invite" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/success.html">
+						<div class="form-group">
+							<div class="input-group">
+								<input class="form-control" type="email" name="email" placeholder="Enter your e-mail address">
+								<p class="hidden">
+									<label>
+										Don’t fill this out if you’re human: <input name="bot-field" />
+									</label>
+								</p>
+								<div class="input-group-btn">
+									<button class="btn btn-default" type="submit">Request an invite</button>
+								</div>
 							</div>
 						</div>
-					</div>
-				</form>
+					</form>
+				</div>
 			</div>
 		</div>
 
