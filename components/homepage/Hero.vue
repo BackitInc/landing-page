@@ -2,7 +2,7 @@
     <div class="relative overflow-hidden bg-brand-black min-h-screen h-full flex">
         <img src="@/assets/imgs/gradient_blob.png" class="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2"/>
         <div class="relative h-full mx-auto sm:my-auto flex justify-center flex-col">
-            <main class="mt-16 mx-auto max-w-7xl px-4 sm:px-6 lg:mt-0">
+            <main class="my-16 mx-auto max-w-7xl px-4 sm:px-6 lg:my-0">
                 <div class="lg:grid lg:grid-cols-12 lg:gap-8">
                     <div class="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left lg:flex lg:flex-col lg:justify-center">
                         <h1>
