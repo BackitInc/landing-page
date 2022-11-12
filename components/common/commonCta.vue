@@ -1,18 +1,24 @@
 <template>
     <div>
-        <div class="mx-auto max-w-6xl py-16 px-4 text-center sm:py-20 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-6xl text-center">
             <div class="text-center">
                 <h2 class="text-lg font-semibold text-primary uppercase">
                     {{ miniTitle }}
                 </h2>
-                <p class="mt-1 text-4xl font-bold tracking-tight text-gray-900 lg:text-5xl">
+                <p
+                    :class="theme === 'dark' ? 'text-white' : 'text-gray-900'"
+                    class="mt-1 text-4xl font-bold tracking-tight lg:text-5xl"
+                >
                     {{ title }}
                 </p>
-                <p class="mx-auto mt-5 max-w-xl text-xl text-gray-500">
+                <p
+                    :class="theme === 'dark' ? 'text-white/[.8]' : 'text-gray-900'"
+                    class="mx-auto mt-5 max-w-xl text-xl"
+                >
                     {{ sub }}
                 </p>
             </div>
-            <a v-if="hasButton" href="#" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-medium text-indigo-600 hover:bg-indigo-50 sm:w-auto">
+            <a v-if="hasButton" href="#" class="mt-8 inline-flex w-full items-center justify-center rounded-md border border-transparent bg-primary px-5 py-3 text-lg font-medium text-white hover:bg-primary-dark sm:w-auto">
                 {{ buttonText }}
             </a>
         </div>
@@ -45,7 +51,12 @@ export default {
             type: Boolean,
             required: false,
             default: false
-        }
+        },
+        theme: {
+            type: String,
+            required: false,
+            default: 'light'
+        },
     }
 }
 </script>
