@@ -27,8 +27,7 @@
                     </div>
                     <div class="relative mt-12 sm:mx-auto sm:max-w-lg lg:col-span-6 lg:mx-0 lg:mt-0 lg:flex lg:max-w-none lg:items-center">
                         <div class="relative mx-auto w-full rounded-lg shadow-lg lg:max-w-md">
-                            <!--TODO: Replace with video-->
-                            <img class="w-auto mx-auto" src="@/assets/imgs/temp.png" alt="" />
+                            <video class="w-auto mx-auto max-w-[60%] rounded-[49px]" src="@/assets/videos/homepage_video.webm" alt="BackIt Demo" playsinline autoplay muted loop />
                         </div>
                     </div>
                 </div>
