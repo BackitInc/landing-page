@@ -14,7 +14,7 @@ import moss_poles_preview from '@/assets/videos/homepage_reviews/previews/mosspo
 import stokke_baby_bathtub_preview from '@/assets/videos/homepage_reviews/previews/bathtub_preview.webm'
 
 export const REVIEW_VIDEOS = {
-    'car_trash_can': {
+    'car_trash_can': { 
         video: car_trash_can,
         preview: car_trash_can_preview,
         productLink: 'https://amzn.to/3TQIAF0',
