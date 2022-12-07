@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+const defaultTheme = require('tailwindcss/defaultTheme')
 module.exports = {
     content: [
         "./components/**/*.{js,vue,ts}",
@@ -8,6 +9,14 @@ module.exports = {
         "./nuxt.config.{js,ts}",
     ],
     theme: {
+        screens: {
+            'xs': '475px',
+            'smed': '704px',
+            'mdplus': '896px',
+            'lgplus': '1152px',
+            'xlplus': '1428px',
+            ...defaultTheme.screens,
+        },
         extend: {
             colors: {
                 primary: {
@@ -16,16 +25,15 @@ module.exports = {
                     DEFAULT: '#28A2DA'
                 },
                 secondary: {
-                    soft: '#F78C2A',
-                    dark: '#EE7D13',
-                    DEFAULT: '#F58013'
+                    soft: '#fb923c',
+                    dark: '#ea580c',
+                    DEFAULT: '#F97316'
                 },
                 brand: {
                     black: '#0D0E0F',
                     white: '#FDFDFD'
                 }
-            }
+            },
         }
-    }
-
+    },
 }

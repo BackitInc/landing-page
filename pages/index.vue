@@ -1,5 +1,6 @@
 <template>
     <div>
+        <ViewVideoModal :isOpen="showVideo" :review="reviewToShow" @closeVideo="showVideo = !showVideo" />
         <hero />
         <div class="py-12">
             <common-cta
@@ -8,7 +9,7 @@
                 :sub="cta1.sub"
                 class="py-16 px-4 sm:py-20 sm:px-6 lg:px-8"
             />
-            <carousel />
+            <carousel @selectReview="selectReview" />
             <div class="mx-auto max-w-screen-2xl py-12 px-4 text-center sm:py-14 sm:px-6 lg:px-8">
                 <div class="text-left">
                     <div class="flex items-baseline">
@@ -44,10 +45,11 @@
 import Hero from '../components/homepage/Hero.vue'
 import CommonCta from '../components/common/commonCta.vue'
 import Carousel from '../components/homepage/Carousel.vue'
-
+import ViewVideoModal from "../components/homepage/ViewVideoModal";
+import {REVIEW_VIDEOS} from "../constants";
 export default {
     name: 'index',
-    components: {Carousel, Hero, CommonCta},
+    components: {ViewVideoModal, Carousel, Hero, CommonCta},
     data() {
         return {
             cta1: {
@@ -60,7 +62,16 @@ export default {
                 title: 'Wanna reserve your username?',
                 sub: 'Leave us a video of you reviewing your favorite product and we’ll reserve your username',
                 buttonText: 'Leave a video'
-            }
+            },
+            showVideo: false,
+            //videoToShow: This gets set when we check in the url for a video.
+            reviewToShow: null
+        }
+    },
+    methods: {
+        selectReview(review) {
+            this.showVideo = true
+            this.reviewToShow = review
         }
     }
 }
